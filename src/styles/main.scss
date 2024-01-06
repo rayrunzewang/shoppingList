@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+$primaryColor: #fff;
+$seconderyColor: red;
+$codeColor: rgb(55, 158, 217);
+$codebackground: rgb(40, 40, 40);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  background: $primaryColor;
+  margin: 0 auto;
+  font-family: poppins;
+}
+
+.nav {
+  height: 80px;
+  background: $primaryColor;
+  display: flex;
+  justify-content: start;
+  line-height: 80px;
+
+  .nav__logo {
+    text-align: center;
+    color: $seconderyColor;
+    font-size: 43px;
+    letter-spacing: -3px;
+    width: 20%;
+  }
+
+  .nav__slogan {
+    padding: 0 20px;
+    color: black;
+    font-size: 16px;
+    width: 80%;
+  }
+
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  background: $primaryColor;
+
+  .products-display {
+    width: 20%;
+    height: 600px;
+    padding: 0px;
+
+    div {
+      background-color: $codebackground;
+      border-radius: 5px;
+      color: $codeColor;
+      padding: 20px;
+      height: 100%;
+    }
+  }
+
+  .cart-operations {
+    width: 80%;
+    height: 600px;
+    padding: 20px;
+    background: #fff;
+
+    .label {
+      & span {
+        color: green;
+        font-style: italic;
+        font-size: 14px;
+      }
+    }
+
+    .input {
+      width: 500px;
+      height: 30px;
+      padding-left: 10px;
+      border-radius: 3px;
+      border: 1px solid rgb(177, 177, 177);
+    }
+
+    .cart-operations__delete-input {
+      width: 200px;
+    }
+
+    .btn {
+      min-width: 100px;
+      height: 30px;
+      padding: 0px 20px;
+      border-radius: 3px;
+      border: none;
+      color: $codeColor;
+      font-weight: 800;
+    }
+
+    .shopping-trolley-img {
+      width: 50px;
+    }
+
+  }
+}
